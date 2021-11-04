@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" , type="text/css" , href="style.css" />
+	<title>Map</title>
+</head>
+
+<body>
+	<div id="map"></div>
+
+	<div class="List">
+		<div class="Element" , style="display:none">
+			<input type="text" , id="placename-1" ,class="Place-Name" />
+			<input type="number" , id="staytime-1" , class="Stay-Time" />
+			<select id="travelmode-1" , class="Travel-Mode">
+				<option value="walk">Walk</option>
+				<option value="train">Train</option>
+				<option value="bus">Bus</option>
+				<option value="subway">Subway</option>
+			</select>
+			<span id="traveltime-1" , class="Travel-Time"></span>
+		</div>
+		<div class="Element">
+			<input type="text" , id="placename0" ,class="Place-Name" />
+			<input type="number" , id="staytime0" , class="Stay-Time" />
+			<select id="travelmode0" , class="Travel-Mode">
+				<option value="walk">Walk</option>
+				<option value="train">Train</option>
+				<option value="bus">Bus</option>
+				<option value="subway">Subway</option>
+			</select>
+			<input type="time", id="departure-time0", class="Departure-Time"/>
+			<span id="traveltime0" , class="Travel-Time"></span>
+		</div>
+		<div class="Element">
+			<input type="text" , id="placename1" ,class="Place-Name" />
+			<input type="number" , id="staytime1" , class="Stay-Time" />
+			<select id="travelmode1" , class="Travel-Mode">
+				<option value="walk">Walk</option>
+				<option value="train">Train</option>
+				<option value="bus">Bus</option>
+				<option value="subway">Subway</option>
+			</select>
+			<input type="time", id="departure-time", class="Departure-Time"/>
+			<span id="traveltime1" , class="Travel-Time"></span>
+		</div>
+		<div class="Element">
+			<input type="text" , id="placename2" ,class="Place-Name" />
+			<input type="number" , id="staytime2" , class="Stay-Time" />
+			<select id="travelmode2" , class="Travel-Mode">
+				<option value="walk">Walk</option>
+				<option value="train">Train</option>
+				<option value="bus">Bus</option>
+				<option value="subway">Subway</option>
+			</select>
+			<input type="time", id="departure-time", class="Departure-Time"/>
+			<span id="traveltime2" , class="Travel-Time"></span>
+		</div>
+		<div class="Element">
+			<input type="text" , id="placename3" ,class="Place-Name" />
+			<input type="number" , id="staytime4" , class="Stay-Time" />
+			<select id="travelmode3" , class="Travel-Mode">
+				<option value="walk">Walk</option>
+				<option value="train">Train</option>
+				<option value="bus">Bus</option>
+				<option value="subway">Subway</option>
+			</select>
+			<input type="time", id="departure-time", class="Departure-Time"/>
+			<span id="traveltime3" , class="Travel-Time"></span>
+		</div>
+	</div>
+	
+	<div class="Info">
+		<input type="number" , id="total-travel-time" />
+		<span id="allowable-time">Time</span>
+	</div>
+
+	<script src="index.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbNSgW3-WwODBzaDYK80F7Yscv2CRblxM&callback=initMap&libraries=places&channel=GMPSB_locatorplus_v4_c" async defer></script>
+</body>
